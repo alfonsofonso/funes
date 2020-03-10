@@ -1,0 +1,65 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Funes</title>
+  <link rel="stylesheet" href="micss.css">
+</head>
+
+<body>
+  
+<button id="MIDI" class="uiBot" onclick="midimap()">MIDI</button>
+<button id="SAVE" class="uiBot" onclick="guarda()">Save</button>
+<button id="LOAD" class="uiBot" >Load <input id="filereader" type="file"  onchange ="recarga(event)"></input></button>
+
+
+<canvas id="micanvas"></canvas>
+  <div id="pantalla"></div>
+
+  <div id="midimapper">
+    <table width="100%"><th width="95%">
+        <div id="tituloM">Midi Mapper</div>
+      </th><th> 
+        <div id="cerrarM" onclick="midimap()">x</div>
+      </th>
+      </tr>
+    </table>
+    <div id="midicontent">
+    <table id="mitabla" width="100%" >
+      <tr>
+        <th>Function</th>
+        <th>Controller</th>
+        <th>Type</th>
+      </tr>
+      <tr>
+        <td id="botones">  </td>
+        <td id="controladores">  </td>
+      </tr>
+    </table>
+  </div>
+  </div>
+
+  <!-- NEXT dev versions -->
+  <script src="js/easeljs-NEXT.combined.js"></script>
+  <script src="js/tweenjs-NEXT.combined.js"></script>
+  
+  <script src="js/FileSaver.js"></script>
+
+  <!-- Last versions -->
+  <!-- <script src="js/easeljs-0.8.2.combined.js"></script>
+  <script src="js/tweenjs-0.6.2.combined.js"></script> -->
+  <script src="visual.js"></script>
+  <script src="raton.js"></script>
+  <script src="midi.js"></script>
+  <script src="planets.js"></script>
+   <script src="destello.js"></script>
+  <script src="sinte.js"></script>
+  <script src="parametros.js"></script>
+  <script src="midimap.js"></script>
+  <script src="grabadora.js"></script>
+   <script src="oido.js"></script>
+   <script src="mensaje.js"></script>
+         
+</body>
+
+</html>
